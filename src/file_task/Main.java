@@ -23,7 +23,7 @@ public class Main {
             frequency
                     .entrySet()
                     .stream()
-                    .sorted((ob1, ob2) -> ob2.getValue().compareTo(ob1.getValue()))
+                    .sorted((ob1, ob2) -> ob1.getValue().compareTo(ob2.getValue()))
                     .limit(10)
                     .forEach(ob->System.out.println(ob.getKey() + " " + ob.getValue()));
 
