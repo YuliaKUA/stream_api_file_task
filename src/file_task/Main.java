@@ -12,28 +12,6 @@ import java.util.stream.Collectors;
 public class Main {
     public static void main(String[] args) throws IOException{
         try {
-//            File file = new File("/E:/JAVA automn/file_task/temp.txt");
-//            FileReader fr = new FileReader(file);
-//            BufferedReader reader = new BufferedReader(fr);
-//
-//            Map<String, Integer> frequency = new TreeMap<String, Integer>();
-//            String line = reader.readLine();
-//            String str = new String();
-//            str += line;
-//            while (line != null) {
-//                line = reader.readLine();
-//                str+= " " + line;
-//            }
-//
-//            String[] subStr;
-//            subStr = str.split(" ");
-//
-//            String tempStr;
-//            for(int i = 0; i < subStr.length; i++){
-//                tempStr = subStr[i].toLowerCase();
-//                frequency.merge();   //??
-//            }
-// stream api
             Stream<String> lines = Files.lines(Paths.get("E://JAVA automn/file_task/temp.txt"));
 
             Map<String, Long> frequency = lines
